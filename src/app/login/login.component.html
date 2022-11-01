@@ -1,0 +1,31 @@
+<a href="./home.html"></a>
+<div class="main">
+  <div class="logo">
+
+    <img src="../../assets/images/bank icon.png" alt=""   class="img">
+  </div>
+  <div class=" text-center mt-4 name" >
+    My Bank
+  </div>
+
+  <h6>{{aim}}</h6>
+
+  <form class="p-3 mt-3">
+
+<div class="form-field d-flex align-items-center">
+  <input (change)="acnoChange($event)" type="text" name="acno" id="login_acno" [placeholder]= "account" class="acc">
+</div> <br>
+
+<div class="form-field d-flex align-items-center">
+<input (change)="pswdChange($event)" type="password" name="password" id="login_pswd" placeholder="Password" class="pass">
+
+</div>  <br>
+
+<button type="button" class="btn btn-primary" (click)="login()">Login</button>
+  </form>
+
+  <div>
+    <a href="">Forget password</a> or <a href="./signup.html">sign up</a>
+  </div>
+ 
+</div>
